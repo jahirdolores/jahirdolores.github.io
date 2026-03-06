@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio | Abel Jahir Dolores Aguilar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <div class="hero-text">
+        <p class="subtitle">Desarrollador Web</p>
+        <h1>Hola, soy <span class="accent">Abel Jahir Dolores Aguilar</span></h1>
+        <p class="hero-description">
+          Me especializo en crear aplicaciones web modernas, rápidas y atractivas.
+          Aquí encontrarás algunos de mis proyectos y tecnologías que utilizo.
+        </p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn primary">Ver proyectos</a>
+          <a href="#contacto" class="btn secondary">Contactarme</a>
+        </div>
+      </div>
+      <div class="hero-avatar">
+        <div class="avatar-circle">
+          <img src="PERFIL.jpeg" alt="Abel Jahir Dolores Aguilar" />
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre-mi">
+      <h2>Sobre mí</h2>
+      <p>
+        Soy un desarrollador apasionado por el aprendizaje constante y la creación de
+        experiencias digitales útiles y bien diseñadas. Disfruto trabajar tanto en el
+        frontend como en el backend, y me gusta cuidar los detalles de la interfaz de usuario.
+        Actualmente trabajo principalmente con JavaScript, TypeScript, React, React Native, Python y SQL.
+      </p>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <div class="skills-grid">
+        <div>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5, CSS3, JavaScript, TypeScript</li>
+            <li>Responsive Design</li>
+            <li>Frameworks (React, React Native, Vue o similar)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js / Express, Python</li>
+            <li>APIs REST</li>
+            <li>Bases de datos (SQL)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Herramientas</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Control de versiones</li>
+            <li>Buenas prácticas y clean code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>API de Generación de Documentos DOCX con plantillas</h3>
+          <p>
+            API en Node.js/TypeScript para generar documentos DOCX a partir de una imagen plantilla
+            (portada, encabezado, pie y contenido), con colores configurables y Swagger UI para probar
+            el endpoint.
+          </p>
+          <p class="tech">Node.js · TypeScript · Express · docx · sharp · Swagger</p>
+          <div class="project-links">
+            <a href="https://github.com/jahirdolores/Gen_Docx_API" target="_blank" rel="noopener noreferrer">Ver código</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Sensu (App móvil con React Native + Expo)</h3>
+          <p>
+            Aplicación móvil con Expo Router integrada con una API de GPS Watch para mostrar datos
+            reales: estado del reloj, alertas, eventos y ubicación, con actualización periódica y manejo
+            de errores/fallbacks.
+          </p>
+          <p class="tech">React Native · Expo · TypeScript · React Navigation · API REST</p>
+          <div class="project-links">
+            <a href="https://github.com/jahirdolores/sensu" target="_blank" rel="noopener noreferrer">Ver código</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3> Scraper (UPC → precios a CSV)</h3>
+          <p>
+            Script en Python que usa Playwright para extraer información de productos y precios
+            (incluyendo promociones) desde Farmacia San Pablo a partir de códigos UPC, exportando
+            resultados a CSV y continuando ante fallos.
+          </p>
+          <p class="tech">Python · Playwright · Web Scraping · CSV</p>
+          <div class="project-links">
+            <a href="https://github.com/jahirdolores/Scraper" target="_blank" rel="noopener noreferrer">Ver código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>
+        Si te interesa colaborar, tienes alguna pregunta o quieres saber más sobre mi trabajo,
+        puedes contactarme por:
+      </p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <a href="mailto:yiiroo97@gmail.com">yiiroo97@gmail.com</a></li>
+        <li><strong>GitHub:</strong> <a href="https://github.com/jahirdolores" target="_blank" rel="noopener noreferrer">jahirdolores</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jahir-dolores-b3957a3b5/" target="_blank" rel="noopener noreferrer">jahir-dolores</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Abel Jahir Dolores Aguilar. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
